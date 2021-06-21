@@ -33,7 +33,7 @@ Client.on(`message`, async message =>
         return;
     }
 
-    if(message.content == prefix + `help`)
+    if((message.content == prefix + `help`) || (message.mentions.members.get(`850814788559699998`)))
     {
         let avatarNiroshy = Client.users.cache.get(BDD[`idNiroshy`]).displayAvatarURL({ format: `png`, dynamic: true });
         let avatarMembre = message.author.displayAvatarURL({ format: `png`, dynamic: true });
